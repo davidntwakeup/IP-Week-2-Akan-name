@@ -1,6 +1,6 @@
 function akanName(){
     var day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday","Friday","Saturday"];
-      var male = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
+    var male = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
     var female = ["Akosua","Adwoa","Abena","Akua","Yaa","Afua","Ama"];
     var DD = parseInt(document.getElementById("day").value);
     var MM = parseInt(document.getElementById("month").value);
@@ -24,5 +24,9 @@ function akanName(){
     };
     var name = sex[arrayPosition];
     day = day[arrayPosition];
-    document.getElementById("akan-name").innerHTML = "Your Akan name is " + name + " and you were born on a " + day + ".";
+    document.getElementById("akan-name").innerHTML = "Your Akan name is " + name + " and you were born on " + day + ".";
   };
+
+  function akanNames(){
+      var day = ["Sunday", "Monday", "Tuesday"]
+  }
