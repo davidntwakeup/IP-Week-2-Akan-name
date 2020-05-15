@@ -1,5 +1,5 @@
-# Portfolio Independent Project
-### This is a Portfolio intended to display what I learned in my first week at Moring Prep, 04/24/2020
+# Akan Name Generator
+### This is a name genearator, inspired by the Akan way of naming children 05/14/2020
 ### By Zahid Awadh
 #### Description
 The Akan name is derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born. Here are Ghanian day names.
