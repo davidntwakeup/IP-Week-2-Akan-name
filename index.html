@@ -6,27 +6,103 @@
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Akan Naming System</title>
+    <script type="javascript" src="./js/script.js"></script>
 </head>
 <body>
-    <div class="jumbotron">
-        <h1><em>The Akan name generator:</em></h1>
-        <h1><em>Find your Akan name.</em></h1>
-    </div>
-    <div class="container mycard">
-        <h2 class="card-title text-center howit">How it works.</h2>
-        <p>Kindly input your birth details on the form below. <br> This is to calculate which day of the week you were born <br> and your Akan name.</p>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card m-4">
-                    <div class="cardx">
-                        <p>Year</p>
-                    </div>
-                    <div class="card-body">
-                        <h4 class="card-title"></h4>
-                    </div>
-                </div>
-            </div>
+    <div class="view" style="background-image: url('./img/africanw.jpg'); background-repeat: background-size; cover; background-position: center center;">
+        <div class="container-fluid">
+            <div class="container-md mt-3 pt-3 bg-primary ">
+              <img src="./img/logon.png"  height="100" width="400" />
+              <h1 class="text-center text-white " >
+          </div>
+          <div class="container">
+            <div class="col-12 bg-dark text-white">
+                  <h5  class="text-center  text-info" ><u>Background Information</u></h5>
+                  <p>Children are considered to be a gift from God in Ghana. 
+                      The birth of a child is therefore a very joyous and important occasion 
+                      in the life of the parents and the community at large, and the naming ceremony 
+                      is usually carried out with much celebration.
+                      At birth, the child is given a day name based upon the gender and
+                       day of the week on which the child was born.</p>
+              </div>
+        <div class="col-12 bg-dark text-white">
+            <form method="post" onsubmit="return false" class="form">
+              <label for="month">Month</label>
+              <input type="number" name="month" id="month" maxlength="2"placeholder="month in figures"required/>
+              <label for="date">Date</label>
+              <input type="number" name="date" id="day" maxlength="2"placeholder="day in figure" required/>
+              <label for="year">Year</label>
+              <input type="number" name="year" id="year" maxlength="4"placeholder="year in figure" required/>
+              <div class="row col-md-6 text-center bg-dark">
+                <h6><b>Gender</b></h6>
+              <input type="radio"  name="gender" id="gender" value="male" checked/> Male<br>
+              <input type="radio" name="gender" id="gender" value="female" checked>Female<br>
+              <input type="submit" value="submit" onclick="nickNames()">
+              </div>
+              
+          </form>
+          <div class="col 12 bg-primary ">
+            <marquee scroll="slide"><p id="results">Your Akan name is:</p></marquee>
+          </div>
+          <br>
+          </div>
+          <div class="col-12 bg-dark text-white">
+
+            <h5><b>Kofi Annan</b></h5>
+            <img src="./img/kofi.jpg"  height="50" width="50" class="rounded-circle "/>
+    
+            <p>He is male born on Friday was a Ghanaian diplomat who served as the seventh Secretary-General of
+              the United Nations
+              from January 1997 to December 2006. Annan and the UN were the co-recipients of the 2001 Nobel Peace Prize.
+               He was the founder and chairman of the Kofi Annan Foundation,
+              as well as chairman of The Elders, an international organization founded by Nelson Mandela.
+              This naming after the days of the week has a much deeper meaning, because the day on which a person was born has about 
+              the similar significance as in the western hemisphere the assignment to a sign of the zodiac.</p>
+    
+          </div>
+          </div>
         </div>
-    </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4 bg-dark text-info text-center">
+              <h5><b><u>Contact</u></b></h5>
+              <img src="images/tel.png"  height="30" width="30" class="rounded-circle "/>
+              <p>
+                <i>
+                  TEL 0700 326 846<br>
+                  <img src="images/mail.jpg"  height="30" width="30" class="rounded-circle "/>
+                  EMAIL: zahid.awadh@gmail.com<br>
+                  FAX   1234554<br>
+                  LOCATION upperhill 3rd avenue Prism Plaza<br>
+                </i>
+              </p>
+    
+            </div>
+      
+            <div class="col-sm-4 bg-dark text-white text-center" >
+              <h5><b><u>Visit Ghana</u></b></h5>
+              <p>
+                Several international airlines, including British Airways and Delta Airlines, operate regularly scheduled 
+                flights from Ghana to major cities in North America, Europe, Africa and the Middle East.
+                Welcome to ghana
+              </p>
+    
+            </div>
+      
+            <div class="col-sm-4 bg-dark text-white text-center">
+              <h5><b><u>Connect & Share</u></b></h5>
+              <img src="./img/twitter.png"  height="50" width="50" class="rounded-circle "/>
+              <img src="./img/fb.png"  height="50" width="50" class="rounded-circle "/>
+              <img src="./img/ig.png"  height="50" width="50" class="rounded-circle "/>
+              <img src="./img/whatsapp.png"  height="50" width="50" class="rounded-circle "/>
+              <img src="./img/mail.jpg"  height="50" width="50" class="rounded-circle "/>
+    
+    
+    
+            </div>
+    
+          </div>
+    
+        </div>
 </body>
 </html>
