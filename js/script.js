@@ -1,4 +1,3 @@
-
 function nickNames() {
   var day = document.getElementById("day").value;
   var DD = parseInt(day); 
